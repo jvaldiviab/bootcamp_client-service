@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: client-service
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.project.clientservice: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
